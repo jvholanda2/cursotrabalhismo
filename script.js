@@ -1,9 +1,22 @@
+// ===== TOAST =====
+let toastTimer;
+function showToast(msg) {
+    const toast = document.getElementById('toast');
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove('show'), 3500);
+}
+
 // ===== SECTIONS =====
 const SECTIONS = ['inicio', 'licao1', 'licao2', 'licao3'];
 
 function showSection(id) {
     const link = document.querySelector(`.nav-link[href="#${id}"]`);
-    if (link && link.classList.contains('nav-locked')) return;
+    if (link && link.classList.contains('nav-locked')) {
+        showToast('Conclua o exercício desta lição e marque-o como concluído para prosseguir.');
+        return;
+    }
 
     SECTIONS.forEach(sid => {
         document.getElementById(sid).classList.add('section-hidden');
