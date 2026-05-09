@@ -82,7 +82,7 @@
                         <span class="stat-label">Exercícios</span>
                     </div>
                 </div>
-                <a href="#licao1" class="hero-cta">Começar o Curso</a>
+                <button id="btnStart" class="hero-cta">Começar o Curso</button>
             </div>
             <div class="hero-deco" aria-hidden="true">
                 <div class="deco-rose">&#127801;</div>
@@ -91,7 +91,7 @@
         </section>
 
         <!-- ===== LIÇÃO 1 ===== -->
-        <section class="lesson" id="licao1">
+        <section class="lesson section-hidden" id="licao1">
             <div class="lesson-inner">
                 <div class="lesson-header">
                     <span class="lesson-number">Lição 01</span>
@@ -173,13 +173,13 @@
 
                 <div class="lesson-footer">
                     <span class="lesson-end">&#127463;&#127479; Fim da Primeira Lição</span>
-                    <a href="#licao2" class="btn-next">Próxima Lição &rarr;</a>
+                    <button class="btn-next" onclick="showSection('licao2')">Próxima Lição &rarr;</button>
                 </div>
             </div>
         </section>
 
         <!-- ===== LIÇÃO 2 ===== -->
-        <section class="lesson lesson-alt" id="licao2">
+        <section class="lesson lesson-alt section-hidden" id="licao2">
             <div class="lesson-inner">
                 <div class="lesson-header">
                     <span class="lesson-number">Lição 02</span>
@@ -273,13 +273,13 @@
 
                 <div class="lesson-footer">
                     <span class="lesson-end">&#127463;&#127479; Fim da Segunda Lição</span>
-                    <a href="#licao3" class="btn-next">Próxima Lição &rarr;</a>
+                    <button class="btn-next" onclick="showSection('licao3')">Próxima Lição &rarr;</button>
                 </div>
             </div>
         </section>
 
         <!-- ===== LIÇÃO 3 ===== -->
-        <section class="lesson" id="licao3">
+        <section class="lesson section-hidden" id="licao3">
             <div class="lesson-inner">
                 <div class="lesson-header">
                     <span class="lesson-number">Lição 03</span>

@@ -737,6 +737,20 @@ body {
     border: none;
 }
 
+/* ===== VISIBILITY ===== */
+.section-hidden { display: none; }
+
+.nav-link.nav-locked {
+    opacity: .35;
+    cursor: default;
+    pointer-events: none;
+}
+
+.nav-link.nav-locked::after {
+    content: ' 🔒';
+    font-size: .7rem;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
     .lesson-inner { padding: 0 2rem; }
