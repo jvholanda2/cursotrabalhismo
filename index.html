@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Introdução ao Trabalhismo Brasileiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Mobile toggle -->
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Abrir menu">&#9776;</button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-rose">&#127801;</span>
+            <span class="sidebar-title">Trabalhismo Brasileiro</span>
+        </div>
+        <div class="sidebar-progress">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span class="progress-text" id="progressText">0% concluído</span>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="#inicio" class="nav-link">Apresentação</a></li>
+            <li>
+                <a href="#licao1" class="nav-link">
+                    <span class="nav-num">01</span>As Origens do Trabalhismo
+                </a>
+            </li>
+            <li>
+                <a href="#licao2" class="nav-link">
+                    <span class="nav-num">02</span>O Pensamento de Pasqualini
+                </a>
+            </li>
+            <li>
+                <a href="#licao3" class="nav-link">
+                    <span class="nav-num">03</span>Vargas e a Era Trabalhista
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <span>Por Samuelson Xavier</span>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="main-content">
+
+        <!-- Hero -->
+        <section class="hero" id="inicio">
+            <div class="hero-bg-pattern"></div>
+            <div class="hero-content">
+                <div class="hero-badge">Por Samuelson Xavier &#127801;</div>
+                <h1 class="hero-title">
+                    Curso de Introdução ao<br>
+                    <em>Trabalhismo Brasileiro</em>
+                </h1>
+                <p class="hero-subtitle">
+                    Uma jornada pelas origens, ideias e personagens que moldaram o movimento
+                    trabalhista no Brasil — de Getúlio Vargas a Alberto Pasqualini.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">3</span>
+                        <span class="stat-label">Lições</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">11</span>
+                        <span class="stat-label">Obras</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">3</span>
+                        <span class="stat-label">Exercícios</span>
+                    </div>
+                </div>
+                <a href="#licao1" class="hero-cta">Começar o Curso</a>
+            </div>
+            <div class="hero-deco" aria-hidden="true">
+                <div class="deco-rose">&#127801;</div>
+                <div class="deco-line"></div>
+            </div>
+        </section>
+
+        <!-- ===== LIÇÃO 1 ===== -->
+        <section class="lesson" id="licao1">
+            <div class="lesson-inner">
+                <div class="lesson-header">
+                    <span class="lesson-number">Lição 01</span>
+                    <h2 class="lesson-title">As Origens do Trabalhismo Brasileiro</h2>
+                    <p class="lesson-intro">
+                        Para a introdução ao Trabalhismo Brasileiro é preciso pontuar o fundamento que são as origens
+                        do Trabalhismo do Brasil. Para iniciar o curso básico sobre trabalhismo no Brasil leia as três obras abaixo.
+                    </p>
+                </div>
+
+                <div class="books-section">
+                    <h3 class="section-label">&#128218; Leituras Obrigatórias</h3>
+                    <div class="books-grid">
+
+                        <div class="book-card">
+                            <div class="book-cover" style="background: linear-gradient(150deg,#1a0a00,#3d1a00);">
+                                <span class="book-spine-num">I</span>
+                            </div>
+                            <div class="book-info">
+                                <span class="book-tag">Documento Histórico</span>
+                                <h4 class="book-title">Carta Testamento</h4>
+                                <p class="book-author">Getúlio Vargas</p>
+                            </div>
+                            <button class="book-btn" onclick="openPDF('PDFs/carta-testamento.pdf','Carta Testamento — Getúlio Vargas')">
+                                &#128196; Abrir PDF
+                            </button>
+                        </div>
+
+                        <div class="book-card">
+                            <div class="book-cover" style="background: linear-gradient(150deg,#6b0000,#b71c1c);">
+                                <span class="book-spine-num">II</span>
+                            </div>
+                            <div class="book-info">
+                                <span class="book-tag">Historiografia</span>
+                                <h4 class="book-title">Trabalhismo e Socialismo no Brasil</h4>
+                                <p class="book-author">Moniz Bandeira</p>
+                            </div>
+                            <button class="book-btn" onclick="openPDF('PDFs/trabalhismo-socialismo.pdf','Trabalhismo e Socialismo no Brasil — Moniz Bandeira')">
+                                &#128196; Abrir PDF
+                            </button>
+                        </div>
+
+                        <div class="book-card">
+                            <div class="book-cover" style="background: linear-gradient(150deg,#0d3b0d,#2e7d32);">
+                                <span class="book-spine-num">III</span>
+                            </div>
+                            <div class="book-info">
+                                <span class="book-tag">Historiografia</span>
+                                <h4 class="book-title">As Origens do Trabalhismo Brasileiro</h4>
+                                <p class="book-author">José Augusto Ribeiro</p>
+                            </div>
+                            <button class="book-btn" onclick="openPDF('PDFs/origens-trabalhismo.pdf','As Origens do Trabalhismo Brasileiro — José Augusto Ribeiro')">
+                                &#128196; Abrir PDF
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="exercise-section">
+                    <h3 class="section-label">&#128221; Primeiro Exercício</h3>
+                    <div class="exercise-card">
+                        <div class="exercise-body">
+                            <p>
+                                Durante a leitura dos livros dos dois historiadores busque a leitura da Carta Testamento
+                                de Getúlio e aponte dentro deles as correspondências com a carta do grande chefe da nação.
+                                <strong>Escreva em no mínimo uma lauda</strong> as relações de Getúlio com as origens do Trabalhismo.
+                            </p>
+                        </div>
+                        <div class="exercise-check">
+                            <label class="check-label">
+                                <input type="checkbox" id="check1" onchange="updateProgress()">
+                                <span class="checkmark"></span>
+                                <span>Marcar exercício como concluído</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lesson-footer">
+                    <span class="lesson-end">&#127463;&#127479; Fim da Primeira Lição</span>
+                    <a href="#licao2" class="btn-next">Próxima Lição &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LIÇÃO 2 ===== -->
+        <section class="lesson lesson-alt" id="licao2">
+            <div class="lesson-inner">
+                <div class="lesson-header">
+                    <span class="lesson-number">Lição 02</span>
+                    <h2 class="lesson-title">O Pensamento de Alberto Pasqualini</h2>
+                    <p class="lesson-intro">
+                        Para a introdução ao trabalhismo brasileiro é preciso compreender as ideias de Alberto Pasqualini
+                        e Getúlio Vargas em primeiro lugar. Pasqualini foi indicado por Vargas, pela USB e pelos sindicalistas
+                        como primeiro doutrinador ou ideólogo do trabalhismo brasileiro. Nele podemos ver sistematizadas
+                        noções fundamentais dos primeiros trabalhistas.
+                    </p>
+                </div>
+
+                <blockquote class="callout">
+                    <p>
+                        <em>"Diretrizes fundamentais do trabalhismo brasileiro"</em> é uma obra fulcral na formação
+                        do programa trabalhista no Brasil. Logo que publicada tornou-se obra de leitura obrigatória no PTB!
+                    </p>
+                </blockquote>
+
+                <div class="books-section">
+                    <h3 class="section-label">&#128218; Leituras Obrigatórias</h3>
+                    <div class="books-grid">
+
+                        <div class="book-card">
+                            <div class="book-cover" style="background: linear-gradient(150deg,#6b0000,#b71c1c);">
+                                <span class="book-spine-num">I</span>
+                            </div>
+                            <div class="book-info">
+                                <span class="book-tag">Doutrina Trabalhista</span>
+                                <h4 class="book-title">Diretrizes Fundamentais do Trabalhismo Brasileiro</h4>
+                                <p class="book-author">Alberto Pasqualini</p>
+                            </div>
+                            <button class="book-btn" onclick="openPDF('PDFs/diretrizes-trabalhismo.pdf','Diretrizes Fundamentais do Trabalhismo Brasileiro — Alberto Pasqualini')">
+                                &#128196; Abrir PDF
+                            </button>
+                        </div>
+
+                        <div class="book-card">
+                            <div class="book-cover" style="background: linear-gradient(150deg,#0d1a4a,#1a237e);">
+                                <span class="book-spine-num">II</span>
+                            </div>
+                            <div class="book-info">
+                                <span class="book-tag">Coletânea</span>
+                                <h4 class="book-title">Atualidade de Alberto Pasqualini</h4>
+                                <p class="book-author">Org. Pedro Simon</p>
+                            </div>
+                            <button class="book-btn" onclick="openPDF('PDFs/atualidade-pasqualini.pdf','Atualidade de Alberto Pasqualini — Org. Pedro Simon')">
+                                &#128196; Abrir PDF
+                            </button>
+                        </div>
+
+                        <div class="book-card">
+                            <div class="book-cover" style="background: linear-gradient(150deg,#1a3300,#33691e);">
+                                <span class="book-spine-num">III</span>
+                            </div>
+                            <div class="book-info">
+                                <span class="book-tag">Política Social</span>
+                                <h4 class="book-title">Bases e Sugestões para uma Política Social</h4>
+                                <p class="book-author">Alberto Pasqualini</p>
+                            </div>
+                            <button class="book-btn" onclick="openPDF('PDFs/bases-politica-social.pdf','Bases e Sugestões para uma Política Social — Alberto Pasqualini')">
+                                &#128196; Abrir PDF
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="exercise-section">
+                    <h3 class="section-label">&#128221; Segundo Exercício</h3>
+                    <div class="exercise-card">
+                        <div class="exercise-body">
+                            <p>
+                                Após ler os discursos e conferências de Pasqualini reproduzidos nos dois livros, aponte
+                                as partes que dialogam ou estão sintetizadas no texto de orientação
+                                <em>"Diretrizes fundamentais do trabalhismo brasileiro"</em>.
+                                Anote as referências, cruze os textos e comente.
+                                <strong>Tente encontrar a coerência geral das ideias de Pasqualini</strong>,
+                                a sua linha particular de pensamento.
+                            </p>
+                        </div>
+                        <div class="exercise-check">
+                            <label class="check-label">
+                                <input type="checkbox" id="check2" onchange="updateProgress()">
+                                <span class="checkmark"></span>
+                                <span>Marcar exercício como concluído</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lesson-footer">
+                    <span class="lesson-end">&#127463;&#127479; Fim da Segunda Lição</span>
+                    <a href="#licao3" class="btn-next">Próxima Lição &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LIÇÃO 3 ===== -->
+        <section class="lesson" id="licao3">
+            <div class="lesson-inner">
+                <div class="lesson-header">
+                    <span class="lesson-number">Lição 03</span>
+                    <h2 class="lesson-title">Vargas, a Aliança Liberal e a Era Vargas</h2>
+                    <p class="lesson-intro">
+                        Para a introdução ao trabalhismo brasileiro é incontornável a leitura do programa da Aliança
+                        Liberal e do programa revolucionário que Vargas sintetizou genialmente no primeiro volume da
+                        Nova Política do Brasil, e também é incontornável o conhecimento da trajetória de Vargas
+                        genialmente narrada na trilogia <em>A Era Vargas</em> de José Augusto Ribeiro.
+                    </p>
+                </div>
+
+                <blockquote class="callout">
+                    <p>
+                        A obra <em>"Trabalhismo e Populismo no Rio Grande do Sul"</em> de Miguel Bodea é sem a menor
+                        dúvida a melhor síntese, por um olhar trabalhista, da história política de nossa tradição.
+                        Vargas e Pasqualini são observados com delicadeza na formação do movimento social e intelectual
+                        que criou o Trabalhismo Brasileiro.
+                        <strong>Deve ser obra de cabeceira do militante!</strong>
+                    </p>
+                </blockquote>
+
+                <div class="books-section">
+                    <h3 class="section-label">&#128218; Leituras Obrigatórias</h3>
+                    <div class="books-grid">
+
+                        <div class="book-card">
+                            <div class="book-cover" style="background: linear-gradient(150deg,#6b0000,#b71c1c);">
+                                <span class="book-spine-num">I</span>
+                            </div>
+                            <div class="book-info">
+                                <span class="book-tag">História Política</span>
+                                <h4 class="book-title">Trabalhismo e Populismo no Rio Grande do Sul</h4>
+                                <p class="book-author">Miguel Bodea</p>
+                            </div>
+                            <button class="book-btn" onclick="openPDF('PDFs/trabalhismo-populismo-rs.pdf','Trabalhismo e Populismo no Rio Grande do Sul — Miguel Bodea')">
+                                &#128196; Abrir PDF
+                            </button>
+                        </div>
+
+                        <div class="book-card">
+                            <div class="book-cover" style="background: linear-gradient(150deg,#1a0a00,#3d1a00);">
+                                <span class="book-spine-num">II</span>
+                            </div>
+                            <div class="book-info">
+                                <span class="book-tag">Documento Histórico</span>
+                                <h4 class="book-title">A Nova Política do Brasil (Vol. I)</h4>
+                                <p class="book-author">Getúlio Vargas</p>
+                            </div>
+                            <button class="book-btn" onclick="openPDF('PDFs/nova-politica-brasil.pdf','A Nova Política do Brasil Vol. I — Getúlio Vargas')">
+                                &#128196; Abrir PDF
+                            </button>
+                        </div>
+
+                        <!-- A Era Vargas — 3 volumes -->
+                        <div class="book-card book-card-wide">
+                            <div class="book-cover" style="background: linear-gradient(150deg,#0d3b0d,#2e7d32);">
+                                <span class="book-spine-num">III</span>
+                            </div>
+                            <div class="book-info">
+                                <span class="book-tag">Biografia — 3 volumes</span>
+                                <h4 class="book-title">A Era Vargas</h4>
+                                <p class="book-author">José Augusto Ribeiro</p>
+                            </div>
+                            <div class="book-volumes">
+                                <button class="book-btn-vol" onclick="openPDF('PDFs/era-vargas-vol1.pdf','A Era Vargas Vol. I — José Augusto Ribeiro')">
+                                    Vol. I
+                                </button>
+                                <button class="book-btn-vol" onclick="openPDF('PDFs/era-vargas-vol2.pdf','A Era Vargas Vol. II — José Augusto Ribeiro')">
+                                    Vol. II
+                                </button>
+                                <button class="book-btn-vol" onclick="openPDF('PDFs/era-vargas-vol3.pdf','A Era Vargas Vol. III — José Augusto Ribeiro')">
+                                    Vol. III
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="exercise-section">
+                    <h3 class="section-label">&#128221; Terceiro Exercício</h3>
+                    <div class="exercise-card">
+                        <div class="exercise-body">
+                            <p>
+                                Após ler as palavras de Vargas e seu programa revolucionário, e complementar sua leitura
+                                com a obra biográfica redigida por José Augusto Ribeiro, escreva em
+                                <strong>no mínimo duas laudas</strong> como o Presidente Getúlio Vargas pôs em prática
+                                as aspirações sociais que demonstrou na plataforma de 29–30 durante sua vida de luta
+                                política e liderança pelo Brasil. Dê especial atenção às formulações programáticas de
+                                Vargas nos discursos sobre a questão social e a questão nacional. Perceba no programa
+                                de Vargas as aproximações com o futuro PTB descrito no texto de Miguel Bodea.
+                            </p>
+                        </div>
+                        <div class="exercise-check">
+                            <label class="check-label">
+                                <input type="checkbox" id="check3" onchange="updateProgress()">
+                                <span class="checkmark"></span>
+                                <span>Marcar exercício como concluído</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lesson-footer">
+                    <span class="lesson-end">&#127463;&#127479; Fim da Terceira Lição</span>
+                </div>
+
+                <div class="course-complete" id="courseComplete">
+                    <div class="complete-icon">&#127881;</div>
+                    <h3>Curso Concluído!</h3>
+                    <p>Parabéns por completar o Curso de Introdução ao Trabalhismo Brasileiro.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-inner">
+                <span class="footer-rose">&#127801;</span>
+                <p class="footer-course">Curso de Introdução ao Trabalhismo Brasileiro</p>
+                <p class="footer-author">Por Samuelson Xavier</p>
+                <p class="footer-flag">&#127463;&#127479;</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- PDF Modal -->
+    <div class="pdf-modal" id="pdfModal" role="dialog" aria-modal="true" aria-labelledby="pdfTitle">
+        <div class="pdf-container">
+            <div class="pdf-header">
+                <h3 id="pdfTitle">Documento</h3>
+                <button class="pdf-close" onclick="closePDF()" aria-label="Fechar">&times;</button>
+            </div>
+            <iframe id="pdfFrame" src="" title="Visualizador de PDF"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
